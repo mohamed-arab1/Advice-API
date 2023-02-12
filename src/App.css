@@ -1,0 +1,67 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #202632;
+  height: 100vh;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .box{
+  width: 30%;
+  min-height: 15rem;
+  background-color: #313a49;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 8px;
+
+}
+
+.container .box h3{
+  color: #cee3e8;
+  padding: 0 2rem;
+}
+
+.container .box p{
+  color: #51f4a5;
+}
+
+.container .box .lines{
+  display: flex;
+  width: 80%;
+  gap: 0.3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .box .lines .line{
+  width: 45%;
+  height: 1px;
+  background-color: #4f5e75;
+}
+
+.container .box .lines .douts{
+  padding: 0 1px;
+  display: flex;
+  gap: 0.5rem;
+}
+.container .box .lines .douts span{
+  width: 3px;
+  height: 10px;
+  background-color: #cee2e9;
+  border-radius: 3px;
+}
