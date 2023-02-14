@@ -1,6 +1,6 @@
-
 import './App.css';
 import React, { useState, useEffect } from 'react';
+import icon_dice from "./images/icon-dice.svg"
 
 function App() {
   const [data, setDate] = useState({
@@ -21,7 +21,9 @@ function App() {
     fetchData();
   }, [])
 
-
+const reload = () => {
+  window.location.reload();
+}
 
   return (
     <div className="container">
@@ -35,6 +37,11 @@ function App() {
             <span></span>
           </div>
           <span className="line"></span>
+        </div>
+        <div className='box-button'>
+          <button onClick={reload}>
+            <img src={icon_dice} alt='icon-button' />
+          </button>
         </div>
       </div>
     </div>
